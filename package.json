@@ -1,0 +1,26 @@
+{
+  "name": "amaromach",
+  "version": "1.0.0",
+  "description": "amazon-like fomantic-ui and less training",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./js/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lirancsoft/amaRomach.git"
+  },
+  "author": "Liran Cohen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lirancsoft/amaRomach/issues"
+  },
+  "homepage": "https://github.com/lirancsoft/amaRomach#readme",
+  "dependencies": {
+    "@types/jquery": "^3.5.0",
+    "fomantic-ui": "^2.8.6",
+    "less": "^3.12.0",
+    "typescript": "^3.9.6"
+  }
+}

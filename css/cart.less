@@ -1,0 +1,51 @@
+@import "colors";
+
+.primary-background {
+  background-color: @primary;
+}
+
+.secondary-button {
+  background-color: @secondary !important;
+  border: 1px solid @button-border-color !important;
+}
+
+.nav-button {
+  color: @white !important;
+  background-color: transparent !important;
+  font-size: medium !important;
+}
+
+.main-content {
+  margin-top: 3%;
+}
+
+.icon-button {
+  background-color: transparent !important;
+  padding: 0 !important;
+}
+
+.margined-input {
+  margin-top: 1%;
+}
+
+.continue-button {
+  background-color: lighten(@primary, 8%) !important;
+  color: @white !important;
+}
+
+.checkout-button {
+  background-color: lighten(@secondary, 3%) !important;
+}
+
+.checkout-button-icon {
+  background-color: @primary !important;
+  color: @white;
+}
+
+.continue-button:hover {
+  background-color: lighten(@primary, 15%) !important;
+}
+
+.checkout-button:hover {
+  background-color: darken(@secondary, 5%) !important;
+}

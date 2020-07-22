@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>amaRomach | Cart</title>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../semantic/dist/semantic.min.css">
+    <script src="../semantic/dist/semantic.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/cart.css"/>
+    <script type="text/javascript" src="../js/cart.js"></script>
+</head>
+<body>
+<div class="ui three column relaxed stackable grid header primary-background">
+    <div class="ui two wide column center aligned middle aligned">
+        <a href="index.html">
+            <img class="ui small image center aligned middle aligned" src="../img/logo.png" alt="amazon logo">
+        </a>
+    </div>
+    <div class="ui eleven wide column row action input center aligned middle aligned">
+        <input type="text" placeholder="Search...">
+        <button class="ui icon button secondary-button">
+            <i class="search icon"></i>
+        </button>
+    </div>
+    <div class="ui three wide column center aligned middle aligned">
+        <button class="ui icon button nav-button">
+            Account&Lists
+            <i class="down caret icon"></i>
+        </button>
+        <a href="cart.html">
+            <button class="ui icon button nav-button">
+                <i class="cart icon"></i>
+                Cart
+            </button>
+        </a>
+    </div>
+</div>
+<div class="ui container main-content">
+    <h2 class="ui left aligned header">Your Shopping Cart</h2>
+    <div class="ui divider"></div>
+    <div class="ui divided very relaxed items">
+        <div class="item">
+            <div class="image">
+                <img src="../img/firefox_logo.png" alt="firefox">
+            </div>
+            <div class="content">
+                <button class="ui right floated icon button icon-button">
+                    <i class="close red big icon"></i>
+                </button>
+                <h2 class="header">Firefox</h2>
+                <div class="description">
+                    <p>Your web, the way you like it.</p>
+                </div>
+                <div class="meta">
+                    <span>₪777.00</span>
+                </div>
+                <div class="ui selection dropdown margined-input">
+                    <input name="quantity" type="hidden">
+                    <i class="dropdown icon"></i>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="image">
+                <img src="../img/ferrari_logo.png" alt="ferrari">
+            </div>
+            <div class="content">
+                <button class="ui right floated icon button icon-button">
+                    <i class="close red big icon"></i>
+                </button>
+                <h2 class="header">Ferrari</h2>
+                <div class="description">
+                    <p>We are the competition. You are the fuel.</p>
+                </div>
+                <div class="meta">
+                    <span>₪1,000,000.00</span>
+                </div>
+                <div class="ui transparent input margined-input">
+                    <input value="1" type="number">
+                </div>
+            </div>
+        </div>
+    </div>
+    <span class="ui text">Total Price : ₪1,000,777.00</span>
+    <div class="ui divider"></div>
+    <div class="ui right aligned container">
+        <button class="ui button continue-button">continue shopping</button>
+        <button class="ui right labeled icon button checkout-button">
+            checkout
+            <i class="cart icon checkout-button-icon"></i>
+        </button>
+    </div>
+</div>
+
+</body>
+</html>
