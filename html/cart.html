@@ -6,7 +6,9 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="../semantic/dist/semantic.min.css">
     <script src="../semantic/dist/semantic.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/navbar.css"/>
     <link rel="stylesheet" type="text/css" href="../css/cart.css"/>
+    <script type="text/javascript" src="../js/navbar.js"></script>
     <script type="text/javascript" src="../js/cart.js"></script>
 </head>
 <body>
@@ -18,25 +20,42 @@
     </div>
     <div class="ui eleven wide column row action input center aligned middle aligned">
         <input type="text" placeholder="Search...">
-        <button class="ui icon button secondary-button">
+        <div class="ui icon button secondary-button">
             <i class="search icon"></i>
-        </button>
+        </div>
     </div>
     <div class="ui three wide column center aligned middle aligned">
-        <button class="ui icon button nav-button">
+        <div class="ui icon button nav-button accounts-popup">
             Account&Lists
             <i class="down caret icon"></i>
-        </button>
+        </div>
+        <div class="ui fluid popup bottom left transition hidden">
+            <div class="ui two column relaxed divided grid">
+                <div class="column">
+                    <div class="ui header">Your Account</div>
+                    <div class="ui link list">
+                        <a class="item">Sign in</a>
+                        <a class="item">Sign up</a>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="ui header">Your Lists</div>
+                    <div class="ui link list">
+                        <a class="item">Create new list</a>
+                    </div>
+                </div>
+            </div>
+        </div>
         <a href="cart.html">
-            <button class="ui icon button nav-button">
+            <div class="ui icon button nav-button">
                 <i class="cart icon"></i>
                 Cart
-            </button>
+            </div>
         </a>
     </div>
 </div>
 <div class="ui container main-content">
-    <h2 class="ui left aligned header">Your Shopping Cart</h2>
+    <div class="ui large header">Your Shopping Cart</div>
     <div class="ui divider"></div>
     <div class="ui divided very relaxed items">
         <div class="item">
@@ -44,10 +63,10 @@
                 <img src="../img/firefox_logo.png" alt="firefox">
             </div>
             <div class="content">
-                <button class="ui right floated icon button icon-button">
+                <div class="ui right floated icon button icon-button">
                     <i class="close red big icon"></i>
-                </button>
-                <h2 class="header">Firefox</h2>
+                </div>
+                <div class="header">Firefox</div>
                 <div class="description">
                     <p>Your web, the way you like it.</p>
                 </div>
@@ -65,10 +84,10 @@
                 <img src="../img/ferrari_logo.png" alt="ferrari">
             </div>
             <div class="content">
-                <button class="ui right floated icon button icon-button">
+                <div class="ui right floated icon button icon-button">
                     <i class="close red big icon"></i>
-                </button>
-                <h2 class="header">Ferrari</h2>
+                </div>
+                <div class="header">Ferrari</div>
                 <div class="description">
                     <p>We are the competition. You are the fuel.</p>
                 </div>
@@ -84,11 +103,11 @@
     <span class="ui text">Total Price : ₪1,000,777.00</span>
     <div class="ui divider"></div>
     <div class="ui right aligned container">
-        <button class="ui button continue-button">continue shopping</button>
-        <button class="ui right labeled icon button checkout-button">
+        <div class="ui button continue-button">continue shopping</div>
+        <div class="ui right labeled icon button checkout-button">
             checkout
             <i class="cart icon checkout-button-icon"></i>
-        </button>
+        </div>
     </div>
 </div>
 
