@@ -5,7 +5,7 @@ $( document ).ready( function() {
                 {
                     name: '1',
                     value: 1,
-                    selected: true
+                    selected: true,
                 },
                 {
                     name     : '2',
